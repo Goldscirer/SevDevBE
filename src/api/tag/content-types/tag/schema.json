@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tag",
     "pluralName": "tags",
-    "displayName": "Tag"
+    "displayName": "Tag",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,16 @@
       "relation": "manyToMany",
       "target": "api::post.post",
       "mappedBy": "tags"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "green",
+        "blue",
+        "orange",
+        "purple",
+        "pink"
+      ]
     }
   }
 }
